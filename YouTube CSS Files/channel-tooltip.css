@@ -1,0 +1,56 @@
+.inline-block-channel-picture{
+  display: inline-block;
+  position: relative;
+}
+
+.inline-block-channel-picture .channel-tooltip{
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.inline-block-channel-picture:hover .channel-tooltip{
+  opacity: 1;
+}
+
+.channel-tooltip{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  width: 230px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: -80px;
+  z-index: 50;
+}
+
+.channel-picture-tooltip{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.channel-info-tooltip{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.channel-name-tooltip{
+  font-family: Roboto, Arial;
+  font-weight: bold;
+}
+
+.subscribers-count-tooltip{
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  color: rgb(103, 103, 103);
+}
+
